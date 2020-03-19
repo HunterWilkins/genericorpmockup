@@ -1,0 +1,71 @@
+footer, nav, main {
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+footer {
+    bottom: 0;
+    height: var(--footerHeight);
+    background: var(--foreground);
+}
+
+main {
+    top: var(--navHeight);
+    bottom: var(--footerHeight);
+    background: var(--layer0);
+    overflow-y: auto;
+}
+
+nav {
+    top: 0;
+    height: var(--navHeight);
+    color: var(--layer0);
+    background: var(--foreground);
+}
+
+#logo {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    padding-left: 15px;
+    height: var(--logoHeight);
+    background: var(--foreground);
+}
+
+#navbar {
+    transform: translateY(-50%);
+    top: 50%;
+    right: 10%;
+    left: 165px;
+    position: absolute;
+    display: inline-block;
+    height: var(--navbarHeight);
+    margin: 0 auto;
+    background: inherit;
+    z-index: 10;
+    padding: 0 5px;
+    text-align:center;
+}
+
+#navbar > * {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#navbar a {
+    width: 23%;
+    transition: .15s;
+}
+
+#navbar a:not(#news-link) {
+    border-right: solid var(--invert-text-color) 1px;
+}
+
+#navbar a:hover {
+    text-shadow: 0 0 8px var(--foreground-sub);
+    color: white;
+}

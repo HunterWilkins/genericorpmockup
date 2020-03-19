@@ -2,7 +2,7 @@
   "name": "genericorpmockup",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "begin": "npm run build && node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",

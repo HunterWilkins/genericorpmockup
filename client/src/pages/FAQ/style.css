@@ -1,0 +1,23 @@
+#faq-article {
+    max-width: 700px;
+    margin: 15px auto;
+    background: white;
+    padding: 15px;
+}
+
+.faq-box {
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.question {
+    background: var(--layer0);
+    padding: 10px;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.answer {
+    padding: 5px;
+    line-height: 1.5em;
+}
